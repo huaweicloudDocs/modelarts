@@ -4,82 +4,82 @@
 
 ## 使用前必读<a name="section149289423310"></a>
 
--   已完成模型开发和训练，使用的AI引擎为ModelArts支持的类型和版本。ModelArts支持如下几种常用引擎及其支持的runtime范围。
+-   已完成模型开发和训练，使用的AI引擎为ModelArts支持的类型和版本。ModelArts支持如下几种常用引擎及其支持的Runtime范围。
 
-    **表 1**  推理支持的常用引擎及其Runtime
+    **表 1**  支持的常用引擎及其Runtime
 
     <a name="table191424319137"></a>
-    <table><thead align="left"><tr id="row21432031201310"><th class="cellrowborder" valign="top" width="26.97%" id="mcps1.2.4.1.1"><p id="p414313310130"><a name="p414313310130"></a><a name="p414313310130"></a>模型使用的引擎类型</p>
+    <table><thead align="left"><tr id="row21432031201310"><th class="cellrowborder" valign="top" width="22.64%" id="mcps1.2.4.1.1"><p id="p414313310130"><a name="p414313310130"></a><a name="p414313310130"></a>模型使用的引擎类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="27.279999999999998%" id="mcps1.2.4.1.2"><p id="p514310313137"><a name="p514310313137"></a><a name="p514310313137"></a>支持的运行环境（Runtime）</p>
+    <th class="cellrowborder" valign="top" width="28.970000000000002%" id="mcps1.2.4.1.2"><p id="p514310313137"><a name="p514310313137"></a><a name="p514310313137"></a>支持的运行环境（Runtime）</p>
     </th>
-    <th class="cellrowborder" valign="top" width="45.75%" id="mcps1.2.4.1.3"><p id="p6565163053415"><a name="p6565163053415"></a><a name="p6565163053415"></a>备注</p>
+    <th class="cellrowborder" valign="top" width="48.39%" id="mcps1.2.4.1.3"><p id="p6565163053415"><a name="p6565163053415"></a><a name="p6565163053415"></a>注意事项</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row71437318132"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p1614383131315"><a name="p1614383131315"></a><a name="p1614383131315"></a>TensorFlow</p>
+    <tbody><tr id="row71437318132"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p1614383131315"><a name="p1614383131315"></a><a name="p1614383131315"></a>TensorFlow</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p1419510107149"><a name="p1419510107149"></a><a name="p1419510107149"></a>python3.6</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p1419510107149"><a name="p1419510107149"></a><a name="p1419510107149"></a>python3.6</p>
     <p id="p13111811131412"><a name="p13111811131412"></a><a name="p13111811131412"></a>python2.7</p>
     <p id="p635545715219"><a name="p635545715219"></a><a name="p635545715219"></a>tf1.13-python2.7-gpu</p>
     <p id="p9596207318"><a name="p9596207318"></a><a name="p9596207318"></a>tf1.13-python2.7-cpu</p>
     <p id="p7663523136"><a name="p7663523136"></a><a name="p7663523136"></a>tf1.13-python3.6-gpu</p>
     <p id="p206081924635"><a name="p206081924635"></a><a name="p206081924635"></a>tf1.13-python3.6-cpu</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p13565173093417"><a name="p13565173093417"></a><a name="p13565173093417"></a>python2.7以及python3.6的运行环境搭载的TensorFlow版本为1.8.0。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p13565173093417"><a name="p13565173093417"></a><a name="p13565173093417"></a>python2.7以及python3.6的运行环境搭载的TensorFlow版本为1.8.0。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
-    <tr id="row1114312310138"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p2014363171312"><a name="p2014363171312"></a><a name="p2014363171312"></a>MXNet</p>
+    <tr id="row1114312310138"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p2014363171312"><a name="p2014363171312"></a><a name="p2014363171312"></a>MXNet</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p4553201911410"><a name="p4553201911410"></a><a name="p4553201911410"></a>python3.6</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p4553201911410"><a name="p4553201911410"></a><a name="p4553201911410"></a>python3.6</p>
     <p id="p18143153161317"><a name="p18143153161317"></a><a name="p18143153161317"></a>python2.7</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p16565030173411"><a name="p16565030173411"></a><a name="p16565030173411"></a>python2.7以及python3.6的运行环境搭载的MXNet版本为1.2.1。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p16565030173411"><a name="p16565030173411"></a><a name="p16565030173411"></a>python2.7以及python3.6的运行环境搭载的MXNet版本为1.2.1。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
-    <tr id="row16143193119135"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p3143431131316"><a name="p3143431131316"></a><a name="p3143431131316"></a>Caffe</p>
+    <tr id="row16143193119135"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p3143431131316"><a name="p3143431131316"></a><a name="p3143431131316"></a>Caffe</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p2143831181316"><a name="p2143831181316"></a><a name="p2143831181316"></a>python2.7</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p2143831181316"><a name="p2143831181316"></a><a name="p2143831181316"></a>python2.7</p>
     <p id="p17321236558"><a name="p17321236558"></a><a name="p17321236558"></a>python3.6</p>
     <p id="p19510173465315"><a name="p19510173465315"></a><a name="p19510173465315"></a>python2.7-gpu</p>
     <p id="p1844718407533"><a name="p1844718407533"></a><a name="p1844718407533"></a>python3.6-gpu</p>
     <p id="p1513014765310"><a name="p1513014765310"></a><a name="p1513014765310"></a>python2.7-cpu</p>
     <p id="p1821752135311"><a name="p1821752135311"></a><a name="p1821752135311"></a>python3.6-cpu</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p099451712559"><a name="p099451712559"></a><a name="p099451712559"></a>python2.7、python3.6、python2.7-gpu、python3.6-gpu、python2.7-cpu、python3.6-cpu的运行环境搭载的Caffe版本为1.0.0</p>
-    <p id="p72561652155520"><a name="p72561652155520"></a><a name="p72561652155520"></a>python2.7、python3.6只能用于运行适用于CPU的模型。推荐使用python2.7-gpu、python3.6-gpu、python2.7-cpu、python3.6-cpu的Runtime。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p099451712559"><a name="p099451712559"></a><a name="p099451712559"></a>python2.7、python3.6、python2.7-gpu、python3.6-gpu、python2.7-cpu、python3.6-cpu的运行环境搭载的Caffe版本为1.0.0。</p>
+    <p id="p72561652155520"><a name="p72561652155520"></a><a name="p72561652155520"></a>python2.7、python3.6只能用于运行适用于CPU的模型。推荐使用python2.7-gpu、python3.6-gpu、python2.7-cpu、python3.6-cpu的Runtime。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
-    <tr id="row514313161318"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p16143193110139"><a name="p16143193110139"></a><a name="p16143193110139"></a>Spark_MLlib</p>
+    <tr id="row514313161318"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p16143193110139"><a name="p16143193110139"></a><a name="p16143193110139"></a>Spark_MLlib</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p032193413143"><a name="p032193413143"></a><a name="p032193413143"></a>python2.7</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p032193413143"><a name="p032193413143"></a><a name="p032193413143"></a>python2.7</p>
     <p id="p101432031111317"><a name="p101432031111317"></a><a name="p101432031111317"></a>python3.6</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p1356514304342"><a name="p1356514304342"></a><a name="p1356514304342"></a>python2.7以及python3.6的运行环境搭载的Spark_MLlib版本为2.3.2。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p1356514304342"><a name="p1356514304342"></a><a name="p1356514304342"></a>python2.7以及python3.6的运行环境搭载的Spark_MLlib版本为2.3.2。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
-    <tr id="row1143331201316"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p4143143115139"><a name="p4143143115139"></a><a name="p4143143115139"></a>Scikit_Learn</p>
+    <tr id="row1143331201316"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p4143143115139"><a name="p4143143115139"></a><a name="p4143143115139"></a>Scikit_Learn</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p138174441410"><a name="p138174441410"></a><a name="p138174441410"></a>python2.7</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p138174441410"><a name="p138174441410"></a><a name="p138174441410"></a>python2.7</p>
     <p id="p1314323121317"><a name="p1314323121317"></a><a name="p1314323121317"></a>python3.6</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p1256553019345"><a name="p1256553019345"></a><a name="p1256553019345"></a>python2.7以及python3.6的运行环境搭载的Scikit_Learn版本为0.18.1。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p1256553019345"><a name="p1256553019345"></a><a name="p1256553019345"></a>python2.7以及python3.6的运行环境搭载的Scikit_Learn版本为0.18.1。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
-    <tr id="row11432314131"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p1214373116138"><a name="p1214373116138"></a><a name="p1214373116138"></a>XGBoost</p>
+    <tr id="row11432314131"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p1214373116138"><a name="p1214373116138"></a><a name="p1214373116138"></a>XGBoost</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p163361454171410"><a name="p163361454171410"></a><a name="p163361454171410"></a>python2.7</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p163361454171410"><a name="p163361454171410"></a><a name="p163361454171410"></a>python2.7</p>
     <p id="p61431731141317"><a name="p61431731141317"></a><a name="p61431731141317"></a>python3.6</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p10565630163417"><a name="p10565630163417"></a><a name="p10565630163417"></a>python2.7以及python3.6的运行环境搭载的XGBoost版本为0.80。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p10565630163417"><a name="p10565630163417"></a><a name="p10565630163417"></a>python2.7以及python3.6的运行环境搭载的XGBoost版本为0.80。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
-    <tr id="row9143331141312"><td class="cellrowborder" valign="top" width="26.97%" headers="mcps1.2.4.1.1 "><p id="p1114319312138"><a name="p1114319312138"></a><a name="p1114319312138"></a>PyTorch</p>
+    <tr id="row9143331141312"><td class="cellrowborder" valign="top" width="22.64%" headers="mcps1.2.4.1.1 "><p id="p1114319312138"><a name="p1114319312138"></a><a name="p1114319312138"></a>PyTorch</p>
     </td>
-    <td class="cellrowborder" valign="top" width="27.279999999999998%" headers="mcps1.2.4.1.2 "><p id="p11563116151"><a name="p11563116151"></a><a name="p11563116151"></a>python2.7</p>
+    <td class="cellrowborder" valign="top" width="28.970000000000002%" headers="mcps1.2.4.1.2 "><p id="p11563116151"><a name="p11563116151"></a><a name="p11563116151"></a>python2.7</p>
     <p id="p2014313114135"><a name="p2014313114135"></a><a name="p2014313114135"></a>python3.6</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45.75%" headers="mcps1.2.4.1.3 "><p id="p1656519309347"><a name="p1656519309347"></a><a name="p1656519309347"></a>python2.7以及python3.6的运行环境搭载的PyTorch版本为1.0。默认使用的runtime为python2.7。</p>
+    <td class="cellrowborder" valign="top" width="48.39%" headers="mcps1.2.4.1.3 "><p id="p1656519309347"><a name="p1656519309347"></a><a name="p1656519309347"></a>python2.7以及python3.6的运行环境搭载的PyTorch版本为1.0。默认使用的Runtime为python2.7。</p>
     </td>
     </tr>
     </tbody>
@@ -177,7 +177,7 @@
         -   “模型说明“：为了帮助其他模型开发者更好的理解及使用您的模型，建议您提供模型的说明文档。单击“增加模型说明“，设置“文档名称“及其“URL“。模型说明支持增加多条。
 
             **图 2**  推理规格和模型说明<a name="fig1568815910313"></a>  
-            ![](figures/推理规格和模型说明-16.png "推理规格和模型说明-16")
+            ![](figures/推理规格和模型说明-19.png "推理规格和模型说明-19")
 
     4.  确认信息填写无误，单击“立即创建“，完成模型导入。
 

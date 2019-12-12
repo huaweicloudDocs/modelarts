@@ -5,13 +5,14 @@
 策略结构包括：策略版本号（Version）、策略授权语句（Statement）和策略依赖（Depends）。
 
 **图 1**  策略结构<a name="fig86683014414"></a>  
-![](figures/策略结构-19.jpg "策略结构-19")
+![](figures/策略结构-26.jpg "策略结构-26")
 
 ## 策略语法<a name="section1590162924117"></a>
 
 如下以SDRS服务的“SDRSAdministraor”为例，说明RBAC策略语法。
 
-![](figures/zh-cn_image_0171017351.gif)
+**图 2**  设置RBAC策略<a name="fig896542972519"></a>  
+![](figures/设置RBAC策略.gif "设置RBAC策略")
 
 ```
 { 
